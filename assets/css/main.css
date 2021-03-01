@@ -217,9 +217,6 @@ p {
 }
 .metal h1 > span:nth-child(2) {
   z-index: 1;
-  text-shadow: 1px 1px 0 #262626, 2px 2px 0 #262626, 3px 3px 0 #262626,
-    4px 4px 0 #262626, 5px 5px 0 #262626, 1px 1px 0 #262626,
-    6px 20px 20px rgba(0, 0, 0, 1), -1px -1px 0 #fff;
 }
 
 .metal p {
@@ -303,6 +300,7 @@ nav.navbar.bootsnav {
   background: hsla(19, 99%, 46%, 0.65);
   border: none;
 }
+
 @media (max-width: 1023px) {
   /* Navbar Responsive
   =================================*/
@@ -315,11 +313,13 @@ nav.navbar.bootsnav {
   nav.navbar.bootsnav .navbar-brand img {
     width: 130px;
   }
+
   nav.navbar-default {
     border: none !important;
-    background: transparent !important;
-    opacity: 0.5;
+    background: #fff;
+    opacity: 1;
   }
+
   nav.navbar.bootsnav .navbar-header {
     float: none;
     display: block;
@@ -384,6 +384,7 @@ nav.navbar.bootsnav {
     padding: 10px 0;
     border-top: solid 1px #e0e0e0;
     margin-bottom: -1px;
+    color: hsl(19, 99%, 46%) !important;
   }
 
   nav.navbar.bootsnav .navbar-nav > li:first-child > a {
@@ -599,9 +600,8 @@ nav.navbar.bootsnav {
     margin-bottom: 40px;
   }
 
-  #newsletter .form-container .form-inline .btn {
-    position: relative;
-    right: 143px;
+  .form-wrapper {
+    left: 130px;
   }
 }
 @media (max-width: 767px) {
@@ -613,25 +613,6 @@ nav.navbar.bootsnav {
   }
   #home .container h2 {
     font-size: 24px;
-  }
-
-  #clients #owl-testimonials .item p {
-    width: 100%;
-  }
-
-  #newsletter .form-container .form-inline .form-control {
-    width: 80%;
-  }
-  #newsletter .form-container .form-inline .btn {
-    position: relative;
-    right: 40px;
-    margin-top: 40px;
-  }
-
-  #contact .contact-info {
-    position: relative !important;
-    top: 0 !important;
-    margin-top: 40px;
   }
 }
 /*========================================
